@@ -40,7 +40,7 @@ Proyecto con soporte de Mapa en tiempo real para visualizar los usuarios agregad
     implementation 'com.google.zxing:core:3.4.0'
 ```
 
-<a name="loginregistro"/>
+<a name="loginregistro"></a>
 ## 2. Login y Registro
 
 Registro y Login instantaneo en el servidor REST como en Firebase para poder usar el Chat
@@ -48,7 +48,7 @@ Registro y Login instantaneo en el servidor REST como en Firebase para poder usa
 Necesario tener Google Play Services actualizado
 ```
 
-<a name="mapa"/>
+<a name="mapa"></a>
 ## 3. Mapa
 
 Mapa en tiempo real proporcionado por Google donde se muestran los amigos(foto y posicion) del usuario
@@ -56,13 +56,13 @@ Mapa en tiempo real proporcionado por Google donde se muestran los amigos(foto y
 Google Map
 ```
 
-<a name="perfilusuario"/>
+<a name="perfilusuario"></a>
 ## 4. Perfil de Usuario
 
 Perfil cuyos datos los obtiene del servidor REST. Para agregar usuarios tienes la opcion de leer un QR de otro usuario o visualizar el tuyo propio
 
 
-<a name="chat"/>
+<a name="chat"></a>
 ## 5. Chat
 
 Sistema de Chat en tiempo real apoyado con Firebase para obtencion de datos en todo momento
