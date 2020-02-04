@@ -14,9 +14,9 @@ Proyecto con soporte de Mapa en tiempo real para visualizar los usuarios agregad
 ## 4. [Perfil de Usuario](#perfilusuario) 
 ## 5. [Chat](#chat) 
 
-<a name="dependencias"/>
-## 1. Dependencias
 
+## 1. Dependencias
+<a name="dependencias"/>
 ```
     //REST
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
