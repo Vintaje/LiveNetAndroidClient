@@ -6,7 +6,7 @@ Desarrollo de la APP LiveNet Client para Android
 
 Proyecto con soporte de Mapa en tiempo real para visualizar los usuarios agregados entre si en nuestro servidor REST junto con un chat paralelo con soporte en FireBase
 
-## Tabla de Contenido
+#### Tabla de Contenido
 
 ## 1. [Dependencias](#dependencias)  
 ## 2. [Login y Registro](#loginregistro) 
@@ -14,9 +14,10 @@ Proyecto con soporte de Mapa en tiempo real para visualizar los usuarios agregad
 ## 4. [Perfil de Usuario](#perfilusuario) 
 ## 5. [Chat](#chat) 
 
-<a name="dependencias">
+<a name="dependencias"></a>
 ## 1. Dependencias
-</a>
+
+
 ```
     //REST
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
