@@ -1,4 +1,4 @@
-![banner](https://github.com/Vintaje/MyApps/blob/master/bannermyapps.png)
+![banner](https://github.com/Vintaje/LiveNetAndroidClient/blob/master/bannerlivenet.png)
 
 Desarrollo de la APP MyAPPs para Android
 
