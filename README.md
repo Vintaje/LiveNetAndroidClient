@@ -1,74 +1,73 @@
 ![banner](https://github.com/Vintaje/LiveNetAndroidClient/blob/master/bannerlivenet.png)
 
-Desarrollo de la APP MyAPPs para Android
+Desarrollo de la APP LiveNet Client para Android
 
 ## Descripcion
 
-Proyecto que incluye multiples soluciones como CRUD, Multimedia, tratamiento de datos de internet y servicios del sistema 
+Proyecto con soporte de Mapa en tiempo real para visualizar los usuarios agregados entre si en nuestro servidor REST junto con un chat paralelo con soporte en FireBase
 
 ## Tabla de Contenido
 
-# 1. Dependencias
-## 2. Lector RSS (eurogamer.es)
-### 3. CRUD Agenda de Juegos
-#### 4. Reproductor de Musica
-##### 5. Reproductor de Video
-###### 6. Test de Sensores
+## 1. [Dependencias](#dependencias)  
+## 2. [Login y Registro](#loginregistro) 
+## 3. [Mapa](#mapa) 
+## 4. [Perfil de Usuario](#perfilusuario) 
+## 5. [Chat](#chat) 
 
-
-
-# 1. Dependencias
+<a name="dependencias"/>
+## 1. Dependencias
 
 ```
-    implementation 'com.google.code.gson:gson:2.3.1'
-    implementation 'com.karumi:dexter:6.0.0'
-    implementation 'com.chibde:audiovisualizer:2.2.0'
-    implementation 'com.gauravk.audiovisualizer:audiovisualizer:0.9.2'
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
-    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.23'
-    implementation 'com.squareup.picasso:picasso:2.71828'
+    //REST
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //Google Map Service
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    
+    //Librerias Chat
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-core:17.2.2'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    apply plugin: 'com.google.gms.google-services'
+
+    implementation('com.journeyapps:zxing-android-embedded:3.6.0') { transitive = false }
+    implementation 'com.google.zxing:core:3.4.0'
 ```
 
-## 2. Lector RSS
+<a name="loginregistro"/>
+## 2. Login y Registro
 
-Extraemos, tratamos y mostramos en un RecyclerView informacion a traves del RSS en un fichero XML de Eurogamer.es
+Registro y Login instantaneo en el servidor REST como en Firebase para poder usar el Chat
 ```
-RSS Source - https://eurogamer.es
-```
-
-
-### 3. CRUD Agenda Juegos
-
-Creacion de una agenda en la cual almacenamos informacion e imagenes en b64 dentro de una BBDD
-```
-BBDD - SQLite
+Necesario tener Google Play Services actualizado
 ```
 
+<a name="mapa"/>
+## 3. Mapa
 
-#### 4. Reproductor de Musica
-
-Reproductor de Audios encontrados en el propio dispositivo, para reproducir se usa un servicio creado el cual lee un fichero XML creada por la APP donde se guarda una lista de reproduccion y el index de la cancion actual
-
-Estructura del XML
+Mapa en tiempo real proporcionado por Google donde se muestran los amigos(foto y posicion) del usuario
 ```
-<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
-<map>
-    <int name="audioIndex" value="-1" />
-    <string name="audioArrayList"></string>
-</map>
+Google Map
 ```
 
-##### 5. Reproductor de Video
+<a name="perfilusuario"/>
+## 4. Perfil de Usuario
 
-Reproductor sencillo el cual recoge y reproduce en un VideoView dentro de un Fragment, videos encontrados en el dispositivos
+Perfil cuyos datos los obtiene del servidor REST. Para agregar usuarios tienes la opcion de leer un QR de otro usuario o visualizar el tuyo propio
+
+
+<a name="chat"/>
+## 5. Chat
+
+Sistema de Chat en tiempo real apoyado con Firebase para obtencion de datos en todo momento
+
 ```
-Tambien, gracias a la dependencia de Pier Francesco, reproducimos videos de Youtube insertando la URL
+Usuarios agregados obtenidos del REST + Soporte de mensajes en Google FireBase
 ```
-
-
-###### 6. Test de Sensores
-
-Fragment con varias animaciones personales para comprobar los valores de los sensores, estas son por ejemplo, una vista de avion, mover un objeto con el acelerometro, brujula para orientacion o un grafico para comprobar el Flujo Magnetico
-
 
 
