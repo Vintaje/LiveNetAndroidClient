@@ -72,3 +72,4 @@ Usuarios agregados obtenidos del REST + Soporte de mensajes en Google FireBase
 ```
 
 
+### Colaboradores [Jorge Segade](https://github.com/jorgedam96/) y [Emilio Rubiales](https://github.com/Vintaje/)
